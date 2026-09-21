@@ -27,7 +27,12 @@ char board[ROW][COL] = {
 //     printf("%c\n", board[0][0]);
 // };
 
-
+void display() 
+{ 
+    printf("%c %c %c\n", board[0][0],board[0][1],board[0][2]);
+    printf("%c %c %c\n", board[1][0],board[1][1],board[1][2]);
+    printf("%c %c %c\n", board[2][0],board[2][1],board[2][2]);
+}
 //maybe make it so the player that starts is random each time the game is run. 
 
 void Player1() 
@@ -58,8 +63,8 @@ void Player1()
         { 
             while(true)
             {
-                row = rand() % ROW;
-                col = rand() % COL;
+                row = rand() % ROW; //generate random location for the row location 
+                col = rand() % COL; //generate random location for the col location 
                 printf("row: %d, col: %d", row, col);
                 //make sure the space is not already taken 
                 if(board[row][col] == ' ')
