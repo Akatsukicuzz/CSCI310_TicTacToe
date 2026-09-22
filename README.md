@@ -14,8 +14,8 @@ The goal of this assignment is to demonstrate key operating system concepts:
 
 ## Files
 
-- `main.c` - program entry point
-- `Players.c` - player logic and board management
+- `main.cpp` - program entry point
+- `Players.cpp` - player logic and board management
 
 ## How it works
 
